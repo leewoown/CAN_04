@@ -1,0 +1,70 @@
+FormatVersion=3.1 // Do not edit this line!
+MuxChar=*
+DecimalSeparator=.
+
+{SEND}
+
+[HMI_CellDataReq]
+ID=701h
+Picture=------ba -------- -------- -------- -------- -------- -------- --------
+a=CellVolt_RQE bit /u:CellDataRe
+b=CellTemps_RQE bit /u:F
+
+{SENDRECEIVE}
+
+[VCU_CMD]
+ID=700h
+Picture=-------- ---edcba -------- -------- -------- -------- -------- --------
+a=BSARun bit /u:F // 0x0=stop ;0x1=run;
+b=BSAReset bit /u:F
+c=BSA_Neg_Rly bit /u:F
+d=PreChar_Rly bit /u:F
+e=BSA_Pos_Rly bit /u:F
+
+{RECEIVE}
+
+[BSA_Ifro]
+ID=610h
+Timeout=1000
+Picture=aaaaaaaa bbbbbbbb cccccccc cccccccc dddddddd dddddddd eeeeeeee ffffffff
+a=BSA_Type char /u:Type
+b=BSA_SW_Ver unsigned /u:VER /f:0.1 /max:2.1
+c=BSA_Normal_Volt unsigned /u:V /max:710
+d=BSA_Capacity unsigned /max:100
+e=BSA_Serial char /u:S
+f=BSA_Parallel unsigned /u:P /max:10
+
+[Pack1_2]
+ID=611h
+Timeout=11
+Picture=-------- -------- -------- -------- -------- -------- -------- --------
+
+[Pack1_3]
+ID=612h
+Timeout=11
+Picture=-------- -------- -------- -------- -------- -------- -------- --------
+
+[Pack1_5]
+ID=613h
+Timeout=100
+Picture=-------- -------- -------- -------- -------- -------- -------- --------
+
+[Pack1_4]
+ID=614h
+Timeout=100
+Picture=-------- -------- -------- -------- -------- -------- -------- --------
+
+[Pack1_6]
+ID=615h
+Timeout=100
+Picture=-------- -------- -------- -------- -------- -------- -------- --------
+
+[Pack1_7]
+ID=616h
+Timeout=100
+Picture=-------- -------- -------- -------- -------- -------- -------- --------
+
+[Pack1_8]
+ID=617h
+Timeout=100
+Picture=-------- -------- -------- -------- -------- -------- -------- --------

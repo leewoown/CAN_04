@@ -1,0 +1,448 @@
+﻿[TSMaster]
+DebugMode=0
+LogVerbose=6
+Bounds=0,0,1936,1048
+Maximized=1
+AutoGenConstDef=0
+AutoGenDBConstDef=0
+DisableCrashDialog=0
+UseOutputDbg=1
+SelTxSgn=1
+DisplayHex=1
+DisplaySym=1
+Skin=
+SkinPalette=
+ColorfulMDI=0
+DelConfOnFormDel=1
+AutoSaveBeforeRun=0
+AutoCopyDBToLocal=0
+CustomFont=
+TraceFont=
+AutoHandleFlexRayUB=1
+AutoSavePrj=0
+DelHistoryConfOnSave=1
+DisableToast=0
+DisplayFormByPage=1
+ShowTabGroups=1
+Magnetic=1
+AppName=TSMaster
+DisableResize=0
+UBAutoHandle=1
+AutoHandleCANUB=1
+
+[app_conn_callback_before_connect]
+FlexRay RBS=100
+Signal Server=300
+CoSimController=100
+MDI Manager=600
+J1939 TP=400
+CAN RBS=100
+Channel Selection=200
+Measurement Controller=500
+TSMaster Main Application=100
+CAN / CAN FD Trace 1=100
+FlexRay RBS Controller=100
+Graphics=100
+Bus Replay=100
+Ethernet RBS=100
+
+[app_conn_callback_after_connect]
+J1939 TP=100
+CAN RBS=300
+MP Library Manager=400
+FlexRay RBS=100
+Ribbon Manager=700
+LIN RBS=350
+MDI Manager=500
+Measurement Comment Manager=200
+TSMaster Main Application=100
+Graphics=100
+Online replay=100
+Ethernet RBS=100
+
+[app_conn_callback_before_disconnect]
+J1939 TP=300
+LIN RBS=100
+MDI Manager=500
+Signal Server=400
+Bus Replay=100
+
+[app_conn_callback_after_disconnect]
+Bus Log Engine=100
+MP Library Manager=700
+CAN RBS=300
+Measurement Controller=800
+FlexRay RBS=100
+MDI Manager=200
+CoSimController=100
+Ribbon Manager=600
+TSMaster Main Application=100
+CAN / CAN FD Trace 1=100
+CAN Transmit=100
+Graphics=100
+Ethernet RBS=100
+
+[OnlineReplay]
+CANCount=1
+CAN0=0,0,0,-1,-1,0,0,0,1,1000,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,04 CNU176S1P2025_03_05_16_47_28_1,.\Logging\Bus\04 CNU176S1P2025_03_05_16_47_28_1.blf,0,,0,0,MSwyLDMsNCw1LDYsNyw4LDksMTAsMTEsMTIsMTMsMTQsMTUsMTYsMTcsMTgsMTksMjAsMjEsMjIsMjMsMjQsMjUsMjYsMjcsMjgsMjksMzAsMzEsMzIsMzMsMzQsMzUsMzYsMzcsMzgsMzksNDAsNDEsNDIsNDMsNDQsNDUsNDYsNDcsNDgsNDksNTAsNTEsNTIsNTMsNTQsNTUsNTYsNTcsNTgsNTksNjAsNjEsNjIsNjMsNjQ_
+
+[TsRPC]
+Actv=1
+SizeBytes=1048576
+
+[TsRPCIP]
+Enabled=0
+Port=2809
+Proto=0
+FileCnt=0
+
+[TTsSimManager]
+FullSim=0
+Speed=1
+Step=0.1
+
+[ChannelMappings]
+CANChnCount=1
+CAN0=0,0,3,0,0,26,0,500,2000,TSMaster,TLog1004
+LINChnCount=0
+FlexRayChnCount=0
+EthernetChnCount=0
+AIChnCount=0
+AOChnCount=0
+DIChnCount=0
+DOChnCount=0
+GPSChnCount=0
+
+[RTL_Form_Position]
+TfrmTSMaster_0=-8,-8,1928,1040
+TfrmAutomotiveFileConverter=841,390,1718,1002
+TfrmCANDatabase1=452,255,1468,886
+TfrmFlexRayDatabase=-1537,594,-384,1244
+TfrmCANDatabase=516,349,1403,937
+TfrmChannelMapping=556,234,1359,686
+TfrmHardware=558,215,1362,816
+
+[UserVariables]
+Count=6
+u0=gIfcuSte,.gVar,Created by Offline Replay Engine,MP,0,0,0,100,16,,-1,,,-1,-1,MQ__
+u1=gFcSte,.gVar,Created by Offline Replay Engine,MP,0,0,0,100,300,,-1,,,-1,-1,MA__
+u2=gFdcOutCur,.gVar,Created by Offline Replay Engine,MP,0,0,0,100,0,,-1,,,-1,-1,MA__
+u3=gFdcOutVlt,.gVar,Created by Offline Replay Engine,MP,0,0,0,100,527,,-1,,,-1,-1,MA__
+u4=IfcuSwVer,.IFCU_FCPP50,Created by Offline Replay Engine,MP,9,0,0,100,OjpJRkNVX0ZDUFA1MDo6SWZjdVN3VmVy,,-1,,,-1,-1,OjpJRkNVX0ZDUFA1MDo6SWZjdVN3VmVy
+u5=Fdc_MaxTmp,.IFCU_FCPP50,Created by Offline Replay Engine,MP,0,0,0,100,54,,-1,,,-1,-1,MA__
+
+[PluginManager]
+ExternalCount=0
+
+[BusStatistics]
+Enabled=1
+
+[app_hw_selector_conf]
+FEnableTSync=0
+FActiveWirelessOBD=
+FEnableTSWirelessOBD=0
+DeviceCount=0
+FEnableEthernetInterfaceDevice=0
+FNetIfNum=0
+
+[hw_app_chn_0]
+Kvaser_CAN_conf={"FControllerType":1,"FClockMHz":80,"FTSeg1Abr":119,"FTSeg2Abr":40,"FSjwAbr":40,"FPrescalerAbr":1,"FTSeg1Dbr":29,"FTSeg2Dbr":10,"FSjwDbr":10,"FPrescalerDbr":1,"FArbitrationBaudrateBps":500000,"FDataBaudrateBps":2000000,"FSamplingPointMul10Percent":750}
+PeakUSB_CAN_conf={"FControllerType":0,"FClockMHz":20,"FTSeg1Abr":2,"FTSeg2Abr":1,"FSjwAbr":1,"FPrescalerAbr":10,"FTSeg1Dbr":3,"FTSeg2Dbr":1,"FSjwDbr":1,"FPrescalerDbr":2,"FArbitrationBaudrateBps":500000,"FDataBaudrateBps":2000000,"FSamplingPointMul10Percent":750}
+TL1004_FD_4_LIN_2_TS_FD_ControllerType=1
+TL1004_FD_4_LIN_2_TS_FD_ControllerMode=0
+TL1004_FD_4_LIN_2_TS_FD_BaudArb=500
+TL1004_FD_4_LIN_2_TS_FD_BTR0Arb=63
+TL1004_FD_4_LIN_2_TS_FD_BTR1Arb=16
+TL1004_FD_4_LIN_2_TS_FD_SJWArb=15
+TL1004_FD_4_LIN_2_TS_FD_PrescalerArb=1
+TL1004_FD_4_LIN_2_TS_FD_BaudData=2000
+TL1004_FD_4_LIN_2_TS_FD_BTR0Data=15
+TL1004_FD_4_LIN_2_TS_FD_BTR1Data=4
+TL1004_FD_4_LIN_2_TS_FD_SJWData=3
+TL1004_FD_4_LIN_2_TS_FD_PrescalerData=1
+TL1004_FD_4_LIN_2_TS_FD_FilterIdx=0
+TL1004_FD_4_LIN_2_TS_FD_FilterStr=XXXXXXXXXXX
+TL1004_FD_4_LIN_2_TS_FD_Term120=1
+TL1004_FD_4_LIN_2_TS_FD_FAutoRecoverFromBusOff=1
+
+[MDIInstances]
+TfrmBasePluginSingle.TfrmLicenseClient=1
+TfrmSystemMsgs=0
+TfrmGraphics=2
+TfrmCANStatistics=1
+TfrmCANDatabase=0
+TfrmHardware=0
+TfrmLogging=2
+TfrmPlayback=1
+TfrmCANFDTrace=1
+TfrmCANFDTransmit=1
+TfrmLINTrace=0
+TfrmLINTransmit=0
+TfrmLINDatabase=0
+TfrmChannelMapping=0
+TfrmCCodeEditor=1
+TfrmSettings=0
+TfrmCANRBS=0
+TfrmMPLibrary=0
+TfrmSystemVarMgmt=0
+TfrmMeasurementSetup=0
+TfrmMeasurementDataFilter=0
+TfrmLINRBS=0
+TfrmTSAppHost=0
+TfrmAutomotiveFileConverter=0
+TfrmSignalMapping=0
+TfrmSymbolValue=0
+TfrmSTIM=0
+TfrmFormDocker=0
+TfrmNumeric=0
+TfrmAppManager=0
+TfrmProjectSettings=0
+TfrmSignalTester=0
+TfrmTsRPC=0
+TfrmTSWebServer=0
+TfrmDeployTSMaster=0
+TfrmInitValues=0
+TfrmSignalAnalyzer=0
+TfrmToolboxBuilder=1
+TfrmTSForm=0
+TfrmPythonCodeEditor=0
+TfrmDiagnostics=0
+TfrmDiagnosticsDB=0
+TfrmDiagnosticsDTCAnalysis=0
+TfrmDiagnosticsActionPanel=0
+TfrmDiagnosticsDOIP=0
+TfrmFlexRayDatabase=0
+TfrmFlexRayTrace=0
+TfrmFlexRayTransmit=0
+TfrmFlexRayRBS=0
+TfrmFlexRayClusterMonitor=0
+TfrmEthernetDatabase=0
+TfrmASN1Database=0
+TfrmEthernetTrace=0
+TfrmEthernetTransmit=0
+TfrmEthernetPackageBuilder=0
+TfrmTCPIPStack=0
+TfrmMpLibBuilder=0
+TfrmAutoSARE2EViewer=0
+TfrmEthernetRBS=0
+TfrmMeter=0
+TfrmUserEvents=0
+TfrmDBCEditor=1
+
+[Pg0]
+Count=1
+f0=TfrmGraphics,0,17,7,1585,788,0,0,1451,808,1
+HiddenCount=12
+h0=TfrmCCodeEditor,0,35,39,1519,1152,35,39,1387,1041,1
+f1=TfrmCANStatistics,0,1203,79,547,663,0,0,379,535,1
+h1=TfrmCANFDTransmit,0,1277,151,1148,632,0,0,1415,752,1
+f2=TfrmCANFDTrace,0,448,59,2079,1301,0,0,1476,589,1
+h2=TfrmGraphics,1,0,0,1451,808,0,0,1451,808,1
+h3=TfrmCANFDTrace,0,-288,87,1940,1100,0,0,1476,589,1
+h4=TfrmPlayback,0,290,0,1413,826,0,0,1413,948,1
+h5=TfrmLogging,0,731,89,1059,623,0,0,1059,623,1
+h6=TfrmToolboxBuilder,0,312,220,1261,1009,312,312,1261,1009,1
+h7=TfrmTSForm,0,154,211,954,583,381,381,1019,675,1
+h8=TfrmLogging,1,0,0,1059,623,0,0,1059,623,1
+h9=TfrmBasePluginSingle.TfrmLicenseClient,0,182,182,1065,793,182,182,1065,793,1
+h10=TfrmDBCEditor,0,44,27,1400,808,130,130,835,542,1
+h11=TfrmCANStatistics,0,1203,79,547,663,0,0,379,535,1
+
+[RTL_Form_Position_MDI]
+CANFDTraceOptions=0,0,1107,398
+CCodeEditor=234,234,1274,937
+Graphics=17,7,1602,795
+CANFDTransmit=0,0,1061,564
+Graphics1=0,0,1088,606
+TfrmCANStatistics=0,0,284,401
+TfrmPlayback=0,0,985,714
+TfrmLogging=0,0,794,467
+TfrmToolboxBuilder=0,0,946,757
+Data_Processing_Toolbox0_TfrmTSForm.Data_Processing_Toolbox=154,211,1108,794
+TfrmLogging1=0,0,794,467
+TfrmBasePluginSingle.TfrmLicenseClient=208,208,1273,1001
+TfrmDBCEditor=44,27,1444,835
+
+[PageLayouts]
+DisableResize=0
+Tabbed=0
+PageCnt=1
+ActiveIdx=0
+Pg0=New1
+ScreenWidth=1920
+ScreenHeight=1080
+MainBounds=-8,-8,1928,1040
+PixelsPerInch=96
+AppLeftP=-8
+AppTopP=-8
+
+[MeasurementController]
+MCount=13
+M0=0,1,209,-1,0,TfrmCANFDTrace,CAN / CAN FD Trace
+M1=0,1,165,-1,1,TfrmCCodeEditor,C Code Editor [CCode2554]
+M2=0,1,177,-1,2,TfrmGraphics,Graphics
+M3=0,1,58,-1,3,TfrmCANFDTransmit,CAN / CAN FD Transmit
+M4=1,1,177,-1,4,TfrmGraphics,Graphics [#2]
+M5=0,1,214,-1,5,TfrmCANStatistics,CAN Statistics
+M6=0,1,215,-1,6,TfrmPlayback,Bus Playback
+M7=0,1,213,-1,7,TfrmLogging,Bus Logging
+M8=0,1,432,-1,8,TfrmToolboxBuilder,TOSUN Toolbox design environment
+M9=0,1,433,-1,9,TfrmTSForm.Data_Processing_Toolbox,Data_Processing_Toolbox
+M10=1,1,213,-1,10,TfrmLogging,Bus Logging [#2]
+M11=0,1,533,-1,11,TfrmBasePluginSingle.TfrmLicenseClient,License Client
+M12=0,1,558,-1,12,TfrmDBCEditor,DBC Editor
+
+[AutoFileConverter]
+UICommon=0,0,0,0,QXV0b21vdGl2ZSBGaWxlIENvbnZlcnRlcg__,100,156,8159689023618198092,0
+UIFilter=
+Zoom=1
+AutoShowDir=1
+ExportANSI=1
+
+[MpGen]
+CAN_CNU_PackBMS_SysbolV8=1
+CAN_CNU_PackBMS_SysbolV8Alias=
+CAN_CNU_PackBMS_SysbolV9=1
+CAN_CNU_PackBMS_SysbolV9Alias=
+CAN_CNU_PackBMS_SysbolV10=1
+CAN_CNU_PackBMS_SysbolV10Alias=
+CAN_CNU_PackBMS_SysbolV11=1
+CAN_CNU_PackBMS_SysbolV11Alias=
+CAN_CNU_PackBMS_SysbolV12=1
+CAN_CNU_PackBMS_SysbolV12Alias=
+CAN_CNU_PackBMS_SysbolV16=1
+CAN_CNU_PackBMS_SysbolV16Alias=
+CAN_CNU_PackBMS_SysbolV17=1
+CAN_CNU_PackBMS_SysbolV17Alias=
+CAN_CNU_PackBMS_SysbolV18=1
+CAN_CNU_PackBMS_SysbolV18Alias=
+CAN_CNU_PackBMS_SysbolV19=1
+CAN_CNU_PackBMS_SysbolV19Alias=
+CAN_CNU_PackBMS_SysbolV20=1
+CAN_CNU_PackBMS_SysbolV20Alias=
+
+[CAN_Databases]
+DBFilesCount=1
+DBOriCount=1
+ChnCANCount=1
+UICommon=0,0,0,0,UGxlYXNlIHNlbGVjdCBhIENBTiBzaWduYWwgdG8gYXNzb2NpYXRlZCB3aXRoIHRoZSBjdXJyZW50IGNvbnRyb2w_,100,1346,5923079067935010519,0
+UIFilter=
+PropertyHeight=298
+PropertyVisible=1
+HWChnCount=2
+DBFiles0=.\DB\CAN\CNU_PackBMS_SysbolV20.pdbc
+DBOri0=.\DB\CNU_PackBMS_SysbolV20.dbc
+ChnCAN0=0
+
+[TfrmFlexRayDatabase]
+UICommon=0,0,0,0,UGxlYXNlIHNlbGVjdCBGbGV4UmF5IFNpZ25hbHMgdG8gYXNzb2NpYXRlIHdpdGg_,100,331,29840848864478238,0
+UIFilter=
+PropertyHeight=298
+PropertyVisible=1
+HWChnCount=2
+
+[HIL_SIL_MATLAB]
+MPName=Model1
+Model=Model1
+Cache=
+Codegen=
+enSet Mini Program=1
+okSet Mini Program=0
+enSet Simulink Model File=0
+okSet Simulink Model File=0
+enSet Simulink Cache Directory=0
+okSet Simulink Cache Directory=0
+enSet Simulink Codegen Directory=0
+okSet Simulink Codegen Directory=0
+enStart Simulink Code Generation=0
+okStart Simulink Code Generation=0
+enFetch generated code=0
+okFetch generated code=0
+enStart code integration=0
+okStart code integration=0
+enCompile Mini Program=0
+okCompile Mini Program=0
+enStart Simulation=0
+okStart Simulation=0
+enStop Simulation=0
+okStop Simulation=0
+
+[TS_MAPPING]
+UICommon=0,0,0,0,VFMgQ2hhbm5lbCBNYXBwaW5n,100,605,3736589638376683037,0
+UIFilter=
+
+[CANStat]
+UICommon=0,-1,0,0,Q0FOIFN0YXRpc3RpY3M_,100,26,3457085028661462129,0
+UIFilter=
+
+[Playback]
+UICommon=0,-1,0,0,QnVzIFBsYXliYWNr,100,68,7335811330571076398,0
+UIFilter=
+PostHeight=237
+FilesCount=5
+PostCount=0
+trtype=0
+Files0=.\Logging\Bus\04 CNU176S1P2025_03_05_16_47_28_1.blf
+Files1=.\Logging\Bus\04 CNU176S1P2025_03_05_12_28_52.blf
+Files2=.\Logging\Bus\BMS_시퀀스_테스트_0306_2025-03-06_80kW작업기구동.blf
+Files3=.\Logging\Bus\04 CNU176S1P2025_04_15_17_30_00.blf
+Files4=.\Logging\Bus\04 CNU176S1P2025_03_05_11_07_54.blf
+
+[CANLogger0]
+UICommon=0,-1,0,0,QnVzIExvZ2dpbmc_,100,182,5658502380778170197,0
+UIFilter=
+LogName=04 CNU176S1P2025_08_01_06_55_37마지막_시험.blf
+AddTime=1
+FollowConf=1
+DefaultDir=1
+PromptRename=0
+FileSizeChoice=1
+FrameCount=5000000
+FLoggingFileSizeMBytes=512
+ConvertToAsc=0
+FDataFileFolder=.\Logging\Bus\
+FDataFileNameRule=[Configuration Name][System Time]마지막_시험
+IsLoggingEnabled=1
+
+[TfrmToolboxBuilder]
+UICommon=0,-1,-1,0,VE9TVU4gVG9vbGJveCBkZXNpZ24gZW52aXJvbm1lbnQ_,100,235,9015925001179691469,0
+UIFilter=
+ExportsCount=0
+
+[ToolboxConf]
+FormTypeCount=1
+FT0=Data_Processing_Toolbox
+FC0=1
+
+[OfflineReplay]
+ChnMapping=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64
+
+[CANLogger1]
+UICommon=0,-1,0,0,QnVzIExvZ2dpbmcgWyMyXQ__,100,134,809807206708904528,0
+UIFilter=
+LogName=04 CNU176S1P2025_08_01_06_55_37.blf
+AddTime=1
+FollowConf=1
+DefaultDir=0
+PromptRename=0
+FileSizeChoice=1
+FrameCount=5000000
+FLoggingFileSizeMBytes=512
+ConvertToAsc=0
+FDataFileFolder=.\Logging\Bus\
+FDataFileNameRule=[Configuration Name][System Time]
+IsLoggingEnabled=1
+
+[TfrmBasePluginSingle.TfrmLicenseClient]
+UICommon=0,-1,0,0,TGljZW5zZSBDbGllbnQ_,100,-1,2902016102207136791,0
+UIFilter=
+
+[BusNameAlias]
+CAN0=CAN1
+
+[HWModeConfig]
+FHWRealVehicleMeasurementMode=0
+
+[TfrmDBCEditor]
+UICommon=0,-1,0,0,REJDIEVkaXRvcg__,100,844,7552818458362886282,0
+UIFilter=
